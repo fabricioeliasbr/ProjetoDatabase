@@ -11,9 +11,9 @@ public class Conexao {
 
         try {
 
-            Class.forName("com.mysql.jdbv.Driver").newInstance();
+            Class.forName("com.mysql.jdbc.Driver").newInstance();
             String url = "jdbc:mysql://127.0.0.1/estacionamento?";
-            url += "user=root&password=";
+            url += "user=root&password=etecia";
 
             con = DriverManager.getConnection(url);
             System.out.println("Conexão aberta!");
